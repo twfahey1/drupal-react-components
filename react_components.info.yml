@@ -1,0 +1,7 @@
+name: 'react_components'
+type: module
+description: 'Provide proof of concept block and other components using React JS'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - react_components_example_content

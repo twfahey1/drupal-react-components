@@ -1,0 +1,14 @@
+name: 'React Components Example Content'
+description: 'This module accompanies the react_components example module. It provides a content type and Views for demonstration purposes.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - menu_ui
+  - node
+  - path
+  - rest
+  - serialization
+  - text
+  - user
+  - views

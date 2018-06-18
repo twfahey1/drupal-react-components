@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Example React Integration Item'
+type: example_react_integration_item
+description: 'This content type accompanies an example repository "react_components" that provides demonstrations of React integration with Drupal.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

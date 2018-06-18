@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Contains react_components.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function react_components_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the react_components module.
+    case 'help.page.react_components':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provide proof of concept block and other components using React JS') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_library_info_alter().
+ */
+function react_components_library_info_alter(&$libraries, $extension) {
+  if ($extension === 'react_components') {
+    $path_to_js = drupal_get_path('module', 'react_components') . '/js/example_rest_react_block/build/static/js/';
+    $react_js_file = scandir($path_to_js)[2];
+    $massaged_path = 'js/example_rest_react_block/build/static/js/' . $react_js_file;
+    $libraries['example-rest-react-block']['js'][$massaged_path] = [];
+  }
+
+}

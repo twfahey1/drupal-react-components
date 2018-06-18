@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.example_react_integration_item.body
+    - node.type.example_react_integration_item
+  module:
+    - text
+    - user
+id: node.example_react_integration_item.default
+targetEntityType: node
+bundle: example_react_integration_item
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,14 @@
+<?php
+
+function react_components_install() {
+    drupal_set_installed_schema_version('react_components', '8100');
+    \Drupal\node\Entity\Node::create([
+        'type' => 'example_react_integration_item',
+        'title' => 'Example react integration item',
+        'body' => [
+            'value' => 'This was programmatically generated via the module when installed. It is being
+            loaded in React JS! Awesome!',
+        ],
+    ])
+    ->save();
+}

@@ -1,0 +1,4 @@
+hello-world-block:
+  version: 0.1
+  js:
+    js/HelloWorldReactBlock/build/static/js/main.1d727208.js: {}

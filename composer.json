@@ -1,0 +1,14 @@
+{
+  "name": "drupal/react_components",
+  "type": "drupal-module",
+  "description": "Provide proof of concept block and other components using React JS",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/react_components",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/react_components",
+    "source": "http://cgit.drupalcode.org/react_components"
+  },
+  "require": { }
+}
